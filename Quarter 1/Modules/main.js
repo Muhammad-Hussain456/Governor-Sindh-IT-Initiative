@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const student_1 = require("./student");
+const getAllStudents = (0, student_1.GetAllStudents)();
+console.log(getAllStudents);
+const getEntryTestPassedStudents = (0, student_1.GetEntryTestPassedStudents)();
+// console.log(getEntryTestPassedStudents);
+const getOnsiteStudents = (0, student_1.GetOnsiteStudents)();
+// console.log(getOnsiteStudents);
+const getStudentData = (0, student_1.GetStudentData)(103);
+// console.log(getStudentData);
+const isEntryTestPassed = (0, student_1.IsEntryTestPassed)(106);
+// console.log(isEntryTestPassed);
+const isOnsiteAllowed = (0, student_1.IsOnsiteAllowed)(105);
+// console.log(isOnsiteAllowed);

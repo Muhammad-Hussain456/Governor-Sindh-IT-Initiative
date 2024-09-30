@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(12, 10, 10);
+  
+}
+main{
+  align-content: center;
+  text-align: center;
+}
+.helloWorldText{
+  color: white;
+  text-transform: capitalize;
+ font-size: 50px;
+
+}
+.helloWorldText:hover{
+  color: blue;
+  opacity: 0.5;
+  
+}
