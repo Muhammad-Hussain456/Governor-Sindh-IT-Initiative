@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Header{
+background-color: rgba(0, 0, 255, 0.74);
+color: white;
+height: 45px;
+}
+.header-button{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  height: 44px;
+  font-size: 25px;
+  
+}
+#home:hover,#about-us:hover,#contact-us:hover,#jobs:hover{
+color: yellow;
+}
+.parentContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  background-color: rgb(204, 204, 248);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.childContainer {
+  width: 250px;
+  height: 330px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid white;
+}
+
+.childContainer:hover {
+  border: 3px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(107, 50, 107);
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 13px;
+}
+
+.readMore {
+  width: 40%;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid blueviolet;
+  font-size: 10px;
+  color: blueviolet;
+  border-radius: 10px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+.readMore:hover {
+  border: 1px solid rgb(209, 159, 255);
+  color: rgb(209, 159, 255);
+}
+
+@media only screen and (max-width: 599px) {
+  .childContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .childContainer {
+    width: 90%;
+  }
+}
+

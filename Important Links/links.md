@@ -19,3 +19,15 @@ https://vercel.com/templates/vercel-postgres
 NextAuth.js examples and templates:
 https://vercel.com/templates/nextauth.js
 
+getcssscan.com Free tools:
+https://getcssscan.com/css-box-shadow-examples
+https://getcssscan.com/css-buttons-examples
+https://getcssscan.com/css-checkboxes-examples
+https://getcssscan.com/css-radios-examples
+https://getcssscan.com/css-shapes
+
+Color palettes:
+https://coolors.co/
+
+animista:
+https://animista.net/
