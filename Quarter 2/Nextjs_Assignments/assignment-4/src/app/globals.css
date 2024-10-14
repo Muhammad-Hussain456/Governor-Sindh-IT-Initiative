@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parentContainer {
+  width: 100%;
+   height: 100vh;
+  overflow: scroll;
+  background-color: rgb(37, 31, 31);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap; 
+}
+
+.childContainer {
+  width: 250px;
+  height: 330px;
+  background-color: #f5eeee;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid white;
+} 
+
+ .childContainer:hover {
+  border: 3px solid green;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+
+.imageContainer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(207, 207, 30);
+ border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} 
+
+ .title {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+} 
+
+.description {
+  font-size: 13px;
+} 
+
+ .readMore {
+  width: 40%;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid green;
+  font-size: 10px;
+  color: blueviolet;
+  border-radius: 15px;
+  padding: 5px;
+  transition-duration: 0.5s;
+} 
+
+ .readMore:hover {
+  border: 1px solid rgb(159, 255, 164);
+  color: black;
+ } 
+
+@media only screen and (max-width: 599px) {
+  .childContainer {
+    width: 60%;
+  }
+} 
+
+@media only screen and (max-width: 450px) {
+  .childContainer {
+    width: 90%;
+  }
+} 
+
