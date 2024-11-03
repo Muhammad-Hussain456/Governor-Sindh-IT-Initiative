@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Responsiveness1() {
+  
   return (
     <div className="parentContainer">
       <div className="childContainer bounce-in-right">

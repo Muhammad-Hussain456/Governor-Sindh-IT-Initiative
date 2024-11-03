@@ -1,0 +1,33 @@
+#parentContainer{
+  justify-content: space-evenly;
+}
+.containers{
+  height: 400px;
+  width: 322px; 
+  background-color: rgb(248, 243, 243);
+  margin: 15px;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.imageContainer{
+  margin: 2px;
+  
+}
+.image{
+  border-radius: 15px;
+}
+.blogContent{
+  margin: 15px;
+}
+.readMoreContainer{
+  margin: 23px;
+  height: 35px;
+}
+.readMoreButton{
+background-color: rgb(146, 146, 245);
+height: 100%;
+width: 150px;
+border-radius: 5px;
+color: white;
+}

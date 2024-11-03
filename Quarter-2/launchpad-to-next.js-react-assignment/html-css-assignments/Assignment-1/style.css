@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+}
+
+#main-heading{
+width: max-content;
+height: 40px;
+margin: 15px;
+font-size: 40px;
+}
+#main-heading:hover, .subHeading:hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.subHeading{
+  width: max-content;
+  height: 30px;
+  margin: 15px;
+  font-size: 30px;
+}
+.paragraph{
+  margin: 15px;
+  font-size: 16px;
+}
+#chapter-2-tags{
+  display: block;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+#tags, #openAndClosetags{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+ font-weight: bold;
+}
+#openAndClosetags{
+ line-height: 25px;
+}

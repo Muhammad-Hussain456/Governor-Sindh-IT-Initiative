@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: grid; grid-template-rows: 13% 80% 7%;">
+  <Header style="background-color: rgb(137, 137, 221); height: 55px; display: flex; margin-top: 20px; margin-left: 70px; margin-right: 70px; border-radius: 15px;">
+    <div style="margin-left: 50px; height: 100%; width: 150px; align-content: center; text-align: center;">
+    <h1 style="line-height: 26px; font-size: 40px; padding-bottom: 6px;"><em style="color: rgb(236, 228, 228); font-style: normal;">pana</em> <br>cloud</h1>
+    </div>
+    <nav style="height: 100%; width: 920px; " >
+    <ul style=" width: 860px; height: 100%; display: flex; justify-content: space-evenly; 
+    list-style: none;  ">
+      <li class="lists">
+       <a href="home.html">HOME</a>
+      </li>
+      <li class="lists" >
+        <a href="portfolio.html">PORTFOLIO</a>
+      </li>
+      <li class="lists">
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li class="lists">
+        <a href="#">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  </Header>
+  <main style="height: 400px;">
+    <form style="margin-left: 70px; margin-right: 70px; margin-top: 12px; height: 99%;">
+      <fieldset style="height: 25%;">
+        <legend>Your Details:</legend>
+        <div>
+          <label for="text"> Name: </label>
+          <input type="text" required />
+        </div>
+        <div>
+          <label for="text"> Email: </label>
+          <input type="text" required />
+        </div>
+      </fieldset>
+      <fieldset style="height: 75%; margin-top: 20px;">
+        <legend>Your Review:</legend>
+        <div>
+          <label for="text"> How did you hear about us? </label>
+          <select>
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Youtube</option>
+            <option>Instegram</option>
+            <option>Family/Friend</option>
+          </select>
+        </div>
+        <div>
+          <label for="text"> Would you like to visit again? </label>
+        </div>
+        <div>
+          <label>Yes</label>
+          <input type="radio" required />
+          <label>No</label>
+          <input type="radio" required />
+          <label>Maybe</label>
+          <input type="radio" required />
+        </div>
+        <div>
+          <label for="text-area"></label>
+          Comments:
+          <br />
+          <textarea id="text-area" rows="2" cols="10"> </textarea>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label>Sign me for email updates</label>
+        </div>
+        <div>
+          <button>submit review</button>
+        </div>
+      </fieldset>
+    </form>
+  
+  </main>
+  <footer style=" background-color: rgb(137, 137, 221); margin-bottom: 30px; margin-left: 75px; margin-right: 75px; height: 35px; border-radius: 8px;">
+    <p style="height: 100%; text-align: center; align-content: center;">Copyright @ 2019. All rights are reserved.</p>
+  </footer>
+</body>
+</html>

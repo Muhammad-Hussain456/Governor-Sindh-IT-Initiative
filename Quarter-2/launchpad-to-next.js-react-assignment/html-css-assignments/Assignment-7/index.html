@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment-7</title>
+</head>
+
+<body>
+  <h1>Chapter # 7 -Form</h1>
+  <form>
+    <fieldset>
+      <legend>Your Detalis:</legend>
+      <div>
+        <label for="text"> Name: </label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label for="text"> Email: </label>
+        <input type="text" required />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Your Review:</legend>
+      <div>
+        <label for="text"> How did you hear about us? </label>
+        <select>
+          <option>Google</option>
+          <option>Facebook</option>
+          <option>Youtube</option>
+          <option>Instegram</option>
+          <option>Family/Friend</option>
+        </select>
+      </div>
+      <div>
+        <label for="text"> Would you like to visit again? </label>
+      </div>
+      <div>
+        <label>Yes</label>
+        <input type="radio" required />
+        <label>No</label>
+        <input type="radio" required />
+        <label>Maybe</label>
+        <input type="radio" required />
+      </div>
+      <div>
+        <label for="text-area"></label>
+        Comments:
+        <br />
+        <textarea id="text-area" rows="2" cols="10"> </textarea>
+      </div>
+      <div>
+        <input type="checkbox" />
+        <label>Sign me for email updates</label>
+      </div>
+      <div>
+        <button>submit review</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

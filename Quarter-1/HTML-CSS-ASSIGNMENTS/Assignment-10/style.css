@@ -1,0 +1,6 @@
+.techList{
+  text-decoration: none;
+}
+.techList:active{
+  color: blue;
+}

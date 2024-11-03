@@ -1,191 +1,171 @@
-#! /usr/bin/env node
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var Person = /** @class */ (function () {
-    function Person(pName, fName, pAge) {
-        this.fullName = pName;
-        this.fatherName = fName;
-        this.age = pAge;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
-    return Person;
-}());
-var Student = /** @class */ (function (_super) {
-    __extends(Student, _super);
-    function Student(fullName, fatherName, age, rYear, rID, departm, programEn, semest) {
-        var _this = _super.call(this, fullName, fatherName, age) || this;
-        _this.coursesEnrolled = [];
-        _this.regYear = rYear;
-        _this.regID = rID;
-        _this.department = departm;
-        _this.programEnrolled = programEn;
-        _this.semester = semest;
-        return _this;
-    }
-    Student.prototype.registerNewCourse = function (course) {
-        this.coursesEnrolled.push(course.name);
-    };
-    Student.prototype.getListOfCourses = function () {
-        console.log(this.fullName + " Courses: ");
-        this.coursesEnrolled.forEach(function (element) {
-            console.log(element);
+};
+
+import inquirer_1 from "inquirer";
+var student1LoginInfo = {
+    id: 64493,
+    password: '@1234@543',
+};
+function studentDetail() {
+    return __awaiter(this, void 0, void 0, function () {
+        var inputStudentName, selectPortions, _a, student1Profile, curriculum, results;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, inquirer_1.prompt([
+                        {
+                            name: "name",
+                            message: "Enter your Registration ID:",
+                            type: "number",
+                        },
+                        {
+                            name: "password",
+                            message: "Enter your password:",
+                            type: 'password',
+                        },
+                    ])];
+                case 1:
+                    inputStudentName = _b.sent();
+                    _a = inputStudentName.name && inputStudentName.password;
+                    switch (_a) {
+                        case student1LoginInfo.id && student1LoginInfo.password: return [3 /*break*/, 2];
+                    }
+                    return [3 /*break*/, 4];
+                case 2:
+                    console.log('Login successfully');
+                    return [4 /*yield*/, inquirer_1.prompt([
+                            {
+                                name: "portions",
+                                message: "select:",
+                                type: 'list',
+                                choices: [
+                                    'Profile',
+                                    'Registeration',
+                                    'Results',
+                                    'Curriculum',
+                                    'SemesterSchedule',
+                                    'Attendence',
+                                    'Exams',
+                                    'Fee Voucher',
+                                    'Scholarship',
+                                ]
+                            },
+                        ])];
+                case 3:
+                    selectPortions = _b.sent();
+                    return [3 /*break*/, 5];
+                case 4:
+                    {
+                        console.log('Not Found!');
+                    }
+                    _b.label = 5;
+                case 5:
+                    student1Profile = {
+                        profilePicture: 'Profile picture',
+                        name: 'M H',
+                        fatherName: 'G H',
+                        CNIC: 6746565354,
+                        Contact: 66466389,
+                        email: 'mmgf@gfgf56',
+                        ResidentialAddress: 'fgfggfdg',
+                    };
+                    curriculum = {
+                        department: 'Computer Science',
+                        program: 'Cyber Security',
+                        degree: 'Bachelor',
+                        RegID: 6745,
+                        TotalSemesters: 8,
+                        CurrentSemester: 4,
+                        totalCredithours: 137,
+                        CreditHoursCompleted: 48,
+                        CreditHoursRemaining: 189,
+                        Courses: {
+                            firstSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            secondSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            thirdSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            fourthSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            fifthSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            sixthSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            seventhSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                            eightSemester: [
+                                'ICT', 'ICT Lab'
+                            ],
+                        },
+                    };
+                    results = {
+                        name: 'M H',
+                        RegID: 6547,
+                        semester: 2,
+                        grades: {
+                            courses: ['ICT', 'ICT LAB'],
+                            Grades: ['B+', 'B'],
+                        },
+                        GPA: 3.5,
+                        CGPA: 3.4,
+                    };
+                    if (selectPortions.portions === 'Profile') {
+                        console.log(student1Profile);
+                    }
+                    else if (selectPortions.portions === 'Curriculum') {
+                        console.log(curriculum);
+                    }
+                    else if (selectPortions.portions === 'Results') {
+                        console.log(results);
+                    }
+                    else {
+                        console.log('error');
+                    }
+                    return [2 /*return*/];
+            }
         });
-    };
-    return Student;
-}(Person));
-var Course = /** @class */ (function () {
-    function Course(cCode, cName) {
-        this.students = [];
-        this.instructors = [];
-        this.name = cName;
-        this.CourseCode = cCode;
-        Course.allCourses.push(cName);
-    }
-    Course.prototype.addStudents = function (std) {
-        this.students.push(std);
-    };
-    Course.prototype.setInstructor = function (inst) {
-        this.instructors.push(inst);
-    };
-    Course.prototype.getListOfStudents = function () {
-        console.log(this.name + "Students Names: ");
-        this.students.forEach(function (element) {
-            console.log(element.fullName);
-        });
-    };
-    Course.prototype.getListOfInstructors = function () {
-        console.log(this.name + " Instructor Name: ");
-        this.instructors.forEach(function (element) {
-            console.log(element.fullName);
-        });
-    };
-    Course.displayAllCourses = function () {
-        console.log("\nAvailable Courses: ");
-        Course.allCourses.forEach(function (element) {
-            console.log(element);
-        });
-    };
-    Course.allCourses = [];
-    return Course;
-}());
-var Instructor = /** @class */ (function (_super) {
-    __extends(Instructor, _super);
-    function Instructor(fullName, fatherName, age, experience, salary) {
-        var _this = _super.call(this, fullName, fatherName, age) || this;
-        _this.courses = [];
-        _this.teachingExperience = experience;
-        _this.salary = salary;
-        return _this;
-    }
-    Instructor.prototype.assignCourses = function (course) {
-        this.courses.push(course.name);
-    };
-    return Instructor;
-}(Person));
-var c1 = new Course(1, "Software Engineering");
-var c2 = new Course(2, "Civil Engineering");
-var c3 = new Course(3, "Mechanical Engineering");
-"";
-var c4 = new Course(4, "Electrical Engineering");
-var c5 = new Course(5, "Automobile Engineering");
-console.log(c1);
-var std1 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std2 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std3 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std4 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std5 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std6 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std7 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std8 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std9 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-var std10 = new Student("Eshal Noman", "Salman Ali", 33, 2024, 34345, "c", "cb", 3);
-c1.addStudents(std1);
-std1.registerNewCourse(c1);
-std1.getListOfCourses();
-c1.addStudents(std2);
-std2.registerNewCourse(c1);
-std2.getListOfCourses();
-c2.addStudents(std3);
-std3.registerNewCourse(c2);
-std3.getListOfCourses();
-c2.addStudents(std4);
-std4.registerNewCourse(c2);
-std4.getListOfCourses();
-c3.addStudents(std5);
-std5.registerNewCourse(c3);
-std5.getListOfCourses();
-c3.addStudents(std6);
-std6.registerNewCourse(c3);
-std6.getListOfCourses();
-Course.displayAllCourses();
-var inst1 = new Instructor("Ali Abbas", "Ghulam Hasan", 20, 6 + "Years", 5800 + "Dollars");
-var inst2 = new Instructor("Ali Abbas", "Ghulam Hasan", 20, 6 + "Years", 5800 + "Dollars");
-var inst3 = new Instructor("Ali Abbas", "Ghulam Hasan", 20, 6 + "Years", 5800 + "Dollars");
-var inst4 = new Instructor("Ali Abbas", "Ghulam Hasan", 20, 6 + "Years", 5800 + "Dollars");
-var inst5 = new Instructor("Ali Abbas", "Ghulam Hasan", 20, 6 + "Years", 5800 + "Dollars");
-c1.setInstructor(inst1);
-inst1.assignCourses(c1);
-c2.setInstructor(inst2);
-inst2.assignCourses(c2);
-c3.setInstructor(inst3);
-inst3.assignCourses(c3);
-c4.setInstructor(inst4);
-inst4.assignCourses(c4);
-c5.setInstructor(inst5);
-inst5.assignCourses(c5);
-c1.getListOfStudents();
-c2.getListOfStudents();
-c3.getListOfStudents();
-c4.getListOfStudents();
-c5.getListOfStudents();
-c1.getListOfInstructors();
-c2.getListOfInstructors();
-c3.getListOfInstructors();
-c4.getListOfInstructors();
-c5.getListOfInstructors();
-var Department = /** @class */ (function () {
-    function Department(name) {
-        this.courses = [];
-        this.name = name;
-        Department.allDepartments.push(this.name);
-    }
-    Department.prototype.addCourse = function (course) {
-        this.courses.push(course.name);
-    };
-    Department.prototype.getCourses = function () {
-        this.courses.forEach(function (element) {
-            console.log(element);
-        });
-    };
-    Department.displayAllDepartments = function () {
-        console.log("\nAll Departments: ");
-        Department.allDepartments.forEach(function (element) {
-            console.log(element);
-        });
-    };
-    Department.allDepartments = [];
-    return Department;
-}());
-var d1 = new Department("SE");
-var d2 = new Department("CE");
-var d3 = new Department("ME");
-var d4 = new Department("EE");
-var d5 = new Department("AE");
-Department.displayAllDepartments();
-d1.addCourse(c1);
-d2.addCourse(c2);
-d3.addCourse(c3);
-d4.addCourse(c4);
-d5.addCourse(c5);
+    });
+}
+studentDetail();
