@@ -13,7 +13,9 @@ export default function Home() {
               Created to change everything for the better. For everyone
             </p>
           </div>
-          <button id="Button">Shop Now</button>
+          <button className="Button" id="ButtonIphone14ProShopNow">
+            Shop Now
+          </button>
         </div>
         <figure className="IphoneImage">
           <Image
@@ -55,22 +57,22 @@ export default function Home() {
               <div className="squareBannerTitleAndText">
                 <p id="squareBannerTitle">Apple AirPods Max</p>
                 <p id="squareBannerText">
-                  Computational audio. Listen, it's powerful
+                  Computational audio. Listen, it is powerful
                 </p>
               </div>
             </div>
             <div className="squareBanner" id="rightSquareBanner">
               <Image
                 id="herolarge"
-                src="/herolarge.png"
+                src="/image36.png"
                 alt="nbbnv"
-                width={104}
-                height={272}
+                width={136}
+                height={190}
               />
               <div className="squareBannerTitleAndText">
-                <p id="squareBannerTitle">Apple AirPods Max</p>
+                <p id="squareBannerTitle">Apple Vision Pro</p>
                 <p id="squareBannerText">
-                  Computational audio. Listen, it's powerful
+                  An immersive way to experience entertainment
                 </p>
               </div>
             </div>
@@ -79,26 +81,136 @@ export default function Home() {
         <div className="rightBanner">
           <div className="rightBannerContent">
             <div className="rightBannerContentTitleAndText">
-              <p id="rightBannerContentTitle">
-              Macbook Air
-              </p>
+              <p id="rightBannerContentTitle">Macbook Air</p>
               <p id="rightBannerContentText">
-                Created to change everything for the better. For everyone
+                The new 15 inch MacBook Air makes room for more
+                <br /> of what you love with a spacious Liquid Retina
+                <br /> display.
               </p>
             </div>
-            <button id="Button">Shop Now</button>
+            <button className="Button" id="ButtonMacbookAirShopNow">
+              Shop Now
+            </button>
           </div>
           <Image
-                id="MacBook"
-                src="/MacBook.png"
-                alt="nbbnv"
-                width={292}
-                height={502}
-              />
+            id="MacBook"
+            src="/MacBook.png"
+            alt="nbbnv"
+            width={292}
+            height={502}
+          />
         </div>
       </section>
       <section className="category">
-
+        <div className="CategoryTop">
+          <h2 id="BrowseByCategory">Browse By Category</h2>
+          <div className="Arrows">
+            <div className="BrowseByCategoryIcons">
+              <Image
+                id="BrowseByCategoryleftIcon"
+                src="/leftIcon.png"
+                alt="nbbnv"
+                width={12.66}
+                height={23}
+              />
+            </div>
+            <div className="BrowseByCategoryIcons">
+              <Image
+                id="BrowseByCategoryleftIcon"
+                src="/rightIcon.png"
+                alt="nbbnv"
+                width={12.66}
+                height={23.31}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="categories">
+          <div className="categoryCard">
+            <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Phones</b>
+            </p>
+          </div>
+          <div className="categoryCard">
+          <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Smart Watches</b>
+            </p>
+          </div>
+          <div className="categoryCard">
+          <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Phones</b>
+            </p>
+          </div>
+          <div className="categoryCard">
+          <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Phones</b>
+            </p>
+          </div>
+          <div className="categoryCard">
+          <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Phones</b>
+            </p>
+          </div>
+          <div className="categoryCard">
+          <div className="categoryCardVector">
+              <Image
+                id="categoryCardPhone"
+                src="/Phones.png"
+                alt="nbbnv"
+                width={48}
+                height={48}
+              />
+            </div>
+            <p id="categoryCardPhoneText">
+             <b>Phones</b>
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );

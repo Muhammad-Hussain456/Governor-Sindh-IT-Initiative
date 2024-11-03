@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   border: 0;
   margin: 0;
   padding: 0;
 }
 body {
   background-color: gray;
-  
 }
 .wrapper {
   position: absolute;
@@ -73,7 +72,7 @@ body {
   line-height: 24px;
   position: relative;
 }
-#Button {
+.Button {
   color: white;
   width: 196px;
   height: 56px;
@@ -93,6 +92,8 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   border: solid 1px white;
+  font-size: 16px;
+  line-height: 24px;
   border-radius: 6px;
 }
 .IphoneImage {
@@ -150,7 +151,7 @@ body {
 }
 #leftSquareBanner {
   height: 100%;
- 
+  background-color: rgb(230, 223, 223);
   display: flex;
   align-items: center;
 }
@@ -175,14 +176,18 @@ body {
 #squareBannerText {
   font-size: 14px;
   line-height: 24px;
+  color: rgb(129, 117, 117);
 }
-#rightSquareBanner{
-background-color: black;
-color: white;
-flex: 1;
+#rightSquareBanner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  flex: 1;
 }
 .rightBanner {
-  background-color: gray;
+  background-color: rgb(230, 223, 223);
   position: relative;
   overflow: hidden;
   align-content: center;
@@ -191,30 +196,35 @@ flex: 1;
   padding-bottom: 44px;
   display: flex;
   align-items: center;
-  
 }
-.rightBannerContent{
-margin-left: 1px;
-
+.rightBannerContent {
+  margin-left: 1px;
 }
-.rightBannerContentTitleAndText{
-
+.rightBannerContentTitleAndText {
 }
-#rightBannerContentTitle{
+#rightBannerContentTitle {
   font-size: 64px;
   line-height: 56px;
   position: relative;
   margin-bottom: 16px;
 }
-#rightBannerContentText{
-font-size: 14px;
-line-height: 23px;
-color: rgb(224, 219, 219);
+#rightBannerContentText {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(129, 117, 117);
+  position: relative;
 }
-#MacBook{
+
+#MacBook {
   flex: 1;
 }
-.category{
+#ButtonMacbookAirShopNow{
+  color: black;
+  border: solid 1px rgb(54, 49, 49);
+  border-radius: 5px;
+  
+}
+.category {
   background-color: white;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -222,4 +232,74 @@ color: rgb(224, 219, 219);
   padding-right: 160px;
   position: relative;
   overflow: hidden;
+}
+.CategoryTop {
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+#BrowseByCategory {
+  height: 100%;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1%;
+  position: relative;
+  
+}
+
+.Arrows{
+  height: 100%;
+  width: 80px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.BrowseByCategoryIcons{
+  height: 32px;
+  width: 32px;
+  position: relative;
+  
+}
+.categories{
+  height: 128px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.categoryCard{
+  height: 100%;
+  width: 160px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-content: center;
+  border-radius: 15px;
+  background-color: rgb(230, 224, 224);
+  position: relative;
+  overflow: hidden;
+}
+
+.categoryCardVector{
+  width: 56px;
+  height: 56px;
+  margin-bottom: 2px;
+  
+}
+#categoryCardPhone{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#categoryCardPhoneText{
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
 }
