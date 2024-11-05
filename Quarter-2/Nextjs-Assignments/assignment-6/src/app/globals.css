@@ -6,6 +6,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: gray;
@@ -280,14 +281,14 @@ body {
   padding-right: 52px;
   padding-top: 24px;
   padding-bottom: 24px;
-  align-content: center;
   border-radius: 15px;
   background-color: rgb(230, 224, 224);
   position: relative;
-  overflow: hidden;
+  
 }
 
 .categoryCardVector{
+  background-color: brown;
   width: 56px;
   height: 56px;
   margin-bottom: 2px;
@@ -295,8 +296,7 @@ body {
 }
 #categoryCardPhone{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+ 
 }
 #categoryCardPhoneText{
   font-size: 16px;

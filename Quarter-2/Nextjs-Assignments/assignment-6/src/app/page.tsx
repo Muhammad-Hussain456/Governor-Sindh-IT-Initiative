@@ -144,7 +144,7 @@ export default function Home() {
           <div className="categoryCardVector">
               <Image
                 id="categoryCardPhone"
-                src="/Phones.png"
+                src="/SmartWatches.png"
                 alt="nbbnv"
                 width={48}
                 height={48}
@@ -158,56 +158,56 @@ export default function Home() {
           <div className="categoryCardVector">
               <Image
                 id="categoryCardPhone"
-                src="/Phones.png"
+                src="/Cameras.png"
                 alt="nbbnv"
                 width={48}
                 height={48}
               />
             </div>
             <p id="categoryCardPhoneText">
-             <b>Phones</b>
+             <b>Cameras</b>
             </p>
           </div>
           <div className="categoryCard">
           <div className="categoryCardVector">
               <Image
                 id="categoryCardPhone"
-                src="/Phones.png"
+                src="/Headphones.png"
                 alt="nbbnv"
                 width={48}
                 height={48}
               />
             </div>
             <p id="categoryCardPhoneText">
-             <b>Phones</b>
+             <b>Headphones</b>
             </p>
           </div>
           <div className="categoryCard">
           <div className="categoryCardVector">
               <Image
                 id="categoryCardPhone"
-                src="/Phones.png"
+                src="/Computers.png"
                 alt="nbbnv"
                 width={48}
                 height={48}
               />
             </div>
             <p id="categoryCardPhoneText">
-             <b>Phones</b>
+             <b>Computers</b>
             </p>
           </div>
           <div className="categoryCard">
           <div className="categoryCardVector">
               <Image
                 id="categoryCardPhone"
-                src="/Phones.png"
+                src="/Gaming.png"
                 alt="nbbnv"
                 width={48}
                 height={48}
               />
             </div>
             <p id="categoryCardPhoneText">
-             <b>Phones</b>
+             <b>Gaming</b>
             </p>
           </div>
         </div>
