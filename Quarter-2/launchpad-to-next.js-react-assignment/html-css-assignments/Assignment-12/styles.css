@@ -238,3 +238,11 @@ footer {
   border-radius: 4px;
   color: white;
 }
+.formEL{
+  width: 160px;
+  margin-left: 15px;
+  height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+}

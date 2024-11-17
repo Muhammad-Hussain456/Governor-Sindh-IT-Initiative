@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="/css/1stTemplate.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Form Section -->
+    <form id="resumeForm">
+      <h2>Fill in Your Details</h2>
+
+      <!-- Personal Information -->
+      <label for="name" id="fullName">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="title">Job Title</label>
+      <input type="text" id="title" required>
+
+      <label for="about">About Me</label>
+      <textarea id="about" required></textarea>
+
+      <!-- Profile Picture Upload -->
+      <label for="profilePic">Profile Picture</label>
+      <input type="file" id="profilePic" accept="image/*" required>
+
+      <!-- Contact Information -->
+      <h3>Contact Information</h3>
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" required>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" required>
+
+      <!-- Languages -->
+      <h3>Languages</h3>
+      <input type="text" id="languages" placeholder="Comma-separated (e.g., English, German)" required>
+
+      <!-- Skills -->
+      <h3>Skills</h3>
+      <div id="skills-container">
+        <div class="skill-input">
+          <input type="text" placeholder="Skill name" class="skill-name" required>
+          <input type="number" placeholder="Proficiency (%)" class="skill-level" min="0" max="100" required>
+        </div>
+      </div>
+      <button type="button" id="addSkill">Add Another Skill</button>
+
+      <!-- Experience -->
+      <h3>Experience</h3>
+      <div id="experience-container">
+        <div class="experience-input">
+          <input type="text" placeholder="Position" class="experience-position" required>
+          <input type="text" placeholder="Company" class="experience-company" required>
+          <input type="text" placeholder="Years (e.g., 2020-2022)" class="experience-years" required>
+          <textarea placeholder="Description" class="experience-description" required></textarea>
+        </div>
+      </div>
+      <button type="button" id="addExperience">Add Another Experience</button>
+
+      <!-- Education -->
+      <h3>Education</h3>
+      <div id="education-container">
+        <div class="education-input">
+          <input type="text" placeholder="Degree" class="education-degree" required>
+          <input type="text" placeholder="Institution" class="education-institution" required>
+          <input type="text" placeholder="Years (e.g., 2015-2019)" class="education-years" required>
+          <textarea placeholder="Description" class="education-description" required></textarea>
+        </div>
+      </div>
+      <button type="button" id="addEducation">Add Another Education</button>
+
+      <button type="submit">Generate Resume</button>
+
+    </form>
+    
+  </div>
+  
+
+
+  <script src="/Scripts/1stTemplate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Template 1</title>
+  <link rel="stylesheet" href="css/template1.css">
+</head>
+<body>
+  <div class="resume">
+    <h1 id="displayName"></h1>
+    <h2 id="displayTitle"></h2>
+    <p id="displayAbout"></p>
+    <!-- Other resume fields as needed -->
+
+    <button onclick="downloadResume()">Download Resume</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const resumeData = JSON.parse(sessionStorage.getItem("resumeData"));
+
+      if (resumeData) {
+        document.getElementById("displayName").textContent = resumeData.name;
+        document.getElementById("displayTitle").textContent = resumeData.title;
+        document.getElementById("displayAbout").textContent = resumeData.about;
+        // Populate other fields
+      }
+    });
+
+    function downloadResume() {
+      window.print(); // Simple download method using print-to-PDF
+    }
+  </script>
+</body>
+</html>
