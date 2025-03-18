@@ -74,7 +74,9 @@ React's state management within functional components is handled using the `useS
   ```
 
 - **Effects with useEffect:**
-  Use the `useEffect` hook to perform side effects such as fetching data or setting up subscriptions:
+  Use the `useEffect` hook to perform side effects such as fetching data, setting up subscriptions or manually changing the DOM.
+  `Side effects` are operations that can affect something outside the scope of the function, such as fetching data, updating the DOM, subscribing to an event, or modifying global state.
+
   ```jsx
   import React, { useState, useEffect } from 'react';
   
@@ -100,7 +102,9 @@ React's state management within functional components is handled using the `useS
 
 ### Summary
 
-To make your React components interactive, use event handlers to respond to user actions and the `useState` hook to manage and update state. Event names are camelCased, and state is initialized and updated using hooks. For more complex scenarios, consider using additional hooks like `useEffect` for side effects and handling multiple states with separate `useState` calls. 
+To make your React components interactive, use event handlers to respond to user actions and the `useState` hook to manage and update state. Event names are camelCased, and state is initialized and updated using hooks. 
+
+For more complex scenarios, consider using additional hooks like `useEffect` for side effects and handling multiple states with separate `useState` calls. 
 
 ### From React to Nextjs:
 

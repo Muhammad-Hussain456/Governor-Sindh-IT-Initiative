@@ -1,0 +1,19 @@
+.navBarTop{
+  height: 124px;
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  
+}
+
+.navBarTopLogo{
+  vertical-align: middle;
+}
+.Search{
+  width: 492px;
+  height: 44px;
+  position: relative;
+border-radius: 20px;
+border-color: C3D4E9;
+}
+

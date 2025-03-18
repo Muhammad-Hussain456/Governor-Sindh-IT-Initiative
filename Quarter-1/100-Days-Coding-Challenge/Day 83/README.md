@@ -61,7 +61,8 @@ You can think of state as any information in your UI that changes over time, usu
 Note: Unlike props which are passed to components as the first function parameter, the state is initiated and stored within a component. You can pass the state information to children components as props, but the logic for updating the state should be kept within the component where state was initially created.
 
 ### Hooks:
-In React, functions starting with `use` are called Hooks that allow you to use state and other React features without writing a class. Hooks were introduced in the 16.8 version of React.
+In React, functions starting with `use` are called Hooks that allow you to use `state`, `side effects` and other React features without 
+writing a class. Hooks were introduced in the 16.8 version of React.
 
 Here are some of the most commonly used hooks:
 
@@ -84,7 +85,16 @@ function Counter() {
 ```
 
 ### 2. `useEffect`
-Handles side effects such as data fetching, subscriptions, or manually changing the DOM.
+Handles `side effects` such as `data fetching`, `subscriptions`, or `manually changing the DOM`.
+
+`Side effects` are operations that can affect something outside the scope of the function, such as fetching data, updating the DOM, subscribing to an event, or modifying global state.
+
+Some common examples of side effects include:
+Fetching Data: You might need to fetch data from an API or a server and update the component state with the retrieved data.
+Setting up Subscriptions: You may want to subscribe to a service or listen for events (e.g., WebSocket connections or event listeners).
+Manual DOM Manipulation: Sometimes you may need to directly manipulate the DOM (e.g., focus on an input field or scroll to a certain position).
+Timers: Starting or clearing timers like setTimeout or setInterval.
+Cleanups: Performing cleanup operations like unsubscribing from a service or clearing timers when a component unmounts.
 
 ```jsx
 import React, { useEffect, useState } from 'react';
@@ -107,7 +117,8 @@ function Example() {
 ```
 
 ### 3. `useContext`
-Accesses the value of a React context.
+Accesses the value of a React `context`.
+In React, `context` is a mechanism that allows you to share values between components without explicitly passing props through every level of the component tree. It is useful for scenarios where data needs to be accessible by many components at different nesting levels, such as themes, user authentication, or localization settings.
 
 ```jsx
 import React, { useContext } from 'react';

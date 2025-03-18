@@ -6,7 +6,7 @@ https://nextjs.org/learn/react-foundations
 
 ### JavaScript
 
-1. **Direct DOM Manipulation**: JavaScript updates the UI by directly manipulating the DOM elements. This can be efficient for simple tasks but may become cumbersome and slow for complex UIs with frequent updates.
+1. **Direct DOM Manipulation**: JavaScript updates the UI by directly manipulating the actual DOM elements. This can be efficient for simple tasks but may become cumbersome and slow for complex UIs with frequent updates.
 2. **Imperative Approach**: You need to explicitly define the steps to update the UI. This means writing more code to handle the state and changes.
 3. **Performance**: Direct DOM manipulation can lead to performance issues, especially with large and complex applications, as each change can trigger reflows and repaints.
 4. **Flexibility**: JavaScript offers more control and flexibility since you can manipulate the DOM in any way you want.
@@ -15,7 +15,7 @@ https://nextjs.org/learn/react-foundations
 ### React
 
 1. **Virtual DOM**: React uses a virtual DOM to optimize UI updates. Changes are first applied to the virtual DOM, and then the minimal necessary changes are made to the actual DOM, improving performance.
-2. **Declarative Approach**: You describe what the UI should look like for a given state, and React takes care of updating the DOM to match that state. This can lead to more readable and maintainable code.
+2. **Declarative Approach**: You describe/declarative what the UI should look like for a given state, and React takes care of updating the DOM to match that state. This can lead to more readable and maintainable code.
 3. **Component-Based Architecture**: React encourages breaking down the UI into reusable components, which can make development more modular and easier to manage.
 4. **State Management**: React provides built-in state management, making it easier to handle dynamic data and UI updates.
 5. **Ecosystem and Tools**: React has a rich ecosystem with tools like Redux for state management, React Router for navigation, and many others that can enhance development.
