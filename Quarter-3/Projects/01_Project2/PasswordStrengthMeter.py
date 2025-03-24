@@ -41,5 +41,6 @@ def check_password_strength(password):
           st.write("❌ Weak password - Improve it using the suggestions above.")
     if(score)!= 4:
         st.write("Hint: @HtdsG_759")
+        
 # Get user input
 check_password_strength(password)
