@@ -3,8 +3,8 @@ import streamlit as st
 import re
 
 st.title("Password Stength Meter")
-st.write("Create a Strong Password for Security.")
-password = st.text_input("password")
+st.write("Create a strong password to  secure your assets.")
+password = st.text_input("password:")
 def check_password_strength(password):
     score = 0
     
