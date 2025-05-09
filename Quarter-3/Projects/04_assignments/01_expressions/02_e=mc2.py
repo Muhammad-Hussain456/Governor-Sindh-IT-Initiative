@@ -1,5 +1,4 @@
 def main():
-
   m:float = 100.0;
   C:float = 299792458;
   e:float = m * C**2;
