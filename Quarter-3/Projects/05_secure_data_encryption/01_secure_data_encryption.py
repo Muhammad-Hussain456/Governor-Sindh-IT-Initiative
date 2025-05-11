@@ -71,20 +71,21 @@ elif choice == "Retrieve Data":
     passkey = st.text_input("Enter Passkey:", type="password")
 
     if st.button("Decrypt"):
-        if encrypted_text and passkey:
-            result = decrypt_data(encrypted_text, passkey)
-            if result:
-                st.success(f"✅ Decrypted Data: {result}")
-            else:
-                remaining_attempts = 3 - st.session_state.failed_attempts
-                if remaining_attempts > 0:
-                    st.error(f"❌ Incorrect passkey! Attempts left: {remaining_attempts}")
-                else:
-                    st.warning("🔒 Too many failed attempts! Redirecting to Login.")
-                    st.session_state.page = "Login"
-                    st.experimental_rerun()
+     if encrypted_text and passkey:
+        result = decrypt_data(encrypted_text, passkey)
+        if result:
+            st.success(f"✅ Decrypted Data: {result}")
         else:
-            st.error("⚠️ Both fields are required.")
+            remaining_attempts = 3 - st.session_state.failed_attempts
+            if remaining_attempts > 0:
+                st.error(f"❌ Incorrect passkey! Attempts left: {remaining_attempts}")
+            else:
+                st.warning("🔒 Too many failed attempts! Redirecting to Login.")
+                st.session_state.page = "Login"
+                st.rerun()
+    else:
+        st.error("⚠️ Both fields are required.")
+
 
 elif choice == "Login":
     st.session_state.page = "Login"
@@ -96,6 +97,6 @@ elif choice == "Login":
             st.session_state.failed_attempts = 0
             st.success("✅ Access restored. Redirecting to Retrieve Data...")
             st.session_state.page = "Retrieve Data"
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("❌ Incorrect password.")
