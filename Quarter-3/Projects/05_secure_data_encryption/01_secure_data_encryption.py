@@ -112,7 +112,8 @@ elif choice == "Login":
         if login_pass == "admin123":
             reset_failed_attempts()
             st.success("✅ Reauthorized successfully! Redirecting to Retrieve Data page...")
-            st.experimental_rerun()
+            st.switch_page("Login")
+
         else:
             st.error("❌ Incorrect password!")
 
