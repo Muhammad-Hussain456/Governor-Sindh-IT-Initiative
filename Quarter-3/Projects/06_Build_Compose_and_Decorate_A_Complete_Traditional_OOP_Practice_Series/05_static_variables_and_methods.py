@@ -4,4 +4,6 @@ class MathUtils:
         return a + b
 
 # Example
-print(MathUtils.add(5, 7))
+#
+s1 = MathUtils()
+print(s1.add(5,9))

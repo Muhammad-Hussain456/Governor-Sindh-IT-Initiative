@@ -6,6 +6,6 @@ class Bank:
         cls.bank_name = name
 
 # Example
-print(Bank.bank_name)
-Bank.change_bank_name("United Bank")
-print(Bank.bank_name)
+print(f"Old name: {Bank.bank_name}")
+Bank.change_bank_name("Meezan Bank")
+print(f"New Name: {Bank.bank_name}")

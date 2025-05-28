@@ -7,5 +7,8 @@ class Car:
 
 # Example
 car1 = Car("Toyota")
+car2 = Car("BMW")
 print(car1.brand)
 car1.start()
+print(car2.brand)
+car2.start()

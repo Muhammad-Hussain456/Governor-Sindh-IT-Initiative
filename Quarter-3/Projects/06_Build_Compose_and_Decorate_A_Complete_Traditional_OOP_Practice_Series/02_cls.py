@@ -9,6 +9,8 @@ class Counter:
         print(f"Total objects created: {cls.count}")
 
 # Example
-c1 = Counter()
-c2 = Counter()
+ob1 = Counter()
+ob2 = Counter()
+ob3 = Counter()
 Counter.display_count()
+
